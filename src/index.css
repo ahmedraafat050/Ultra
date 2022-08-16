@@ -7,7 +7,172 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+  box-sizing: border-box;
+}
+
+
+/* ==============================
+      NavBar
+============================== */
+.navbar {
+  background-color: #fff !important;
+  position: fixed;
+  z-index: 56566;
+}
+.navbar a:hover {
+  color: #eb5424 !important;
+}
+
+/* ==============================
+      Home
+============================== */
+
+.home {
+  min-height: 100vh;
+  background-image: url('../public/images/Home/home-bg.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+.home h2 {
+  font-size: 48px;
+}
+
+.home h4 {
+  color: #eb5424;
+}
+
+.home button {
+  background-color: #eb5424;
+  transition: all ease 0.3s;
+}
+
+.home button:hover {
+  background-color: #fff;
+  color: #eb5424 !important;
+  border: 1px solid #eb5424 !important;
+}
+
+/* ==============================
+      Work
+============================== */
+
+.work {
+  background-color: rgb(247, 247, 247);
+}
+
+.work .card {
+  width: 18rem;
+  border-radius: 5px;
+}
+
+.work .card-title {
+  color: #eb5424;
+  text-align: center;
+}
+
+/* ==============================
+      Protofolio
+============================== */
+
+.protofolio .active {
+  background-color: #eb5424 !important;
+  color: #fff !important;
+}
+
+/* ==============================
+      Profile
+============================== */
+
+.profile {
+  background-color: rgb(247, 247, 247);;
+}
+
+
+
+.profile .bar {
+  overflow: hidden;
+  padding: 10px 0;
+  margin-bottom: 10px
+}
+
+.profile .bar .title {
+  float: left;
+}
+
+.profile .bar .perc {
+  float: right;
+  margin-right: 100px
+}
+
+.profile .bar .parent {
+  height: 2px;
+  clear: both;
+  background: #f8f8f8;
+  position: relative;
+  top: 5px
+}
+
+.profile .bar .parent span {
+  background: #eb5424;
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  bottom: 0
+}
+
+.profile .bar .parent span.sp1 {
+  width: 100%;
+}
+
+.profile .bar .parent span.sp2 {
+  width: 90%;
+}
+
+.profile .bar .parent span.sp3 {
+  width: 80%;
+}
+
+/* ==============================
+      About
+============================== */
+
+.about {
+  background: url('../public/images/creative/about-bg.jpg');
+  background-size: cover;
+  background-attachment: fixed
+}
+
+.about h4 {
+  color: #eb5424;
+}
+
+/* ==============================
+      Contact
+============================== */
+
+.contact {
+  min-height: 100vh;
+}
+
+.contact .form-input {
+  row-gap: 8px;
+}
+
+textarea {
+  resize: none;
+}
+
+/* ==============================
+      Footer
+============================== */
+
+footer {
+  background-color: #f1f1f1 !important;
+}
+
+footer .spical {
+  background-color: rgba(0, 0, 0, 0.2);
 }
